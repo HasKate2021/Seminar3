@@ -7,11 +7,12 @@ int a = int.Parse(Console.ReadLine()!);
 Console.Write("Введите B: ");
 int b = int.Parse(Console.ReadLine()!);
 
-int NatSt (num1,num2)
+int NatSt (int num1,int num2)
 {
-    for(int i=0;i<num2;i++)
+    int num=num1;
+    for(int i=1;i<num2;i++)
     {
-        num*=num;
+        num=num*num1;
     }
     return num;
 }
